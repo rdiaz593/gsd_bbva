@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 def merge_ranges(ranges):
     for i in range(len(ranges)):
         for j in range(i + 1, len(ranges)):
@@ -24,11 +25,12 @@ def merge_ranges(ranges):
 
     return merged_ranges
 
+
 # Inputs requested
 ranges = [
     [datetime(2024, 1, 1, 15, 30), datetime(2024, 3, 1, 15, 0)],
     [datetime(2024, 2, 1, 15, 15), datetime(2024, 5, 1, 14, 45)],
-    [datetime(2023, 10, 1, 13, 0), datetime(2023, 11, 1, 13, 45)]
+    [datetime(2023, 10, 1, 13, 0), datetime(2023, 11, 1, 13, 45)],
 ]
 
 # Merging intervals
@@ -36,4 +38,4 @@ merged = merge_ranges(ranges)
 
 # Show output
 for start, end in merged:
-    print(f'{start} a {end}')
+    print(f"{start} a {end}")
